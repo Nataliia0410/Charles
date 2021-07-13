@@ -1,6 +1,268 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <?charles serialisation-version='2.0' ?>
 <charles-export>
+  <proxyConfiguration>
+    <enableSOCKSProxy>false</enableSOCKSProxy>
+    <dynamicHTTPPort>false</dynamicHTTPPort>
+    <dynamicSOCKSPort>false</dynamicSOCKSPort>
+    <enableSOCKSTransparentHTTPProxying>true</enableSOCKSTransparentHTTPProxying>
+    <port>8888</port>
+    <SOCKSPort>8889</SOCKSPort>
+    <decryptSSL>true</decryptSSL>
+    <transparentProxy>false</transparentProxy>
+    <supportsH2>true</supportsH2>
+    <preferIPv6addresses>false</preferIPv6addresses>
+    <sslLocations>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <host>safebrowsing.google.com</host>
+            <port>443</port>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+        <locationMatch>
+          <location>
+            <host>azscus1-client-s.gateway.messenger.live.com</host>
+            <port>443</port>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </sslLocations>
+    <sslExcludeLocations>
+      <locationPatterns/>
+    </sslExcludeLocations>
+    <defaultSOCKSTransparentHTTPProxyPorts>true</defaultSOCKSTransparentHTTPProxyPorts>
+    <socksTransparentHTTPProxyPorts/>
+    <socksTransparentHTTPProxyPortRanges/>
+    <windowsConfiguration>
+      <useHTTP>true</useHTTP>
+      <useSOCKS>false</useSOCKS>
+      <enableAtStartup>true</enableAtStartup>
+    </windowsConfiguration>
+    <macOSXConfiguration>
+      <useHTTP>true</useHTTP>
+      <useSOCKS>false</useSOCKS>
+      <enableAtStartup>true</enableAtStartup>
+    </macOSXConfiguration>
+    <mozillaFirefoxConfiguration>
+      <useHTTP>true</useHTTP>
+      <useSOCKS>false</useSOCKS>
+      <enableAtStartup>true</enableAtStartup>
+    </mozillaFirefoxConfiguration>
+  </proxyConfiguration>
+  <recordingConfiguration>
+    <limit>100</limit>
+    <maxTransactions>0</maxTransactions>
+    <maxWebSocketMessages>-1</maxWebSocketMessages>
+    <ignoreHosts>
+      <locationPatterns/>
+    </ignoreHosts>
+    <recordHosts>
+      <locationPatterns/>
+    </recordHosts>
+  </recordingConfiguration>
+  <accessControlConfiguration>
+    <warn>true</warn>
+    <ipRanges>
+      <ipRange>
+        <ip>
+          <int>192</int>
+          <int>168</int>
+          <int>0</int>
+          <int>106</int>
+        </ip>
+        <mask>
+          <int>255</int>
+          <int>255</int>
+          <int>255</int>
+          <int>255</int>
+        </mask>
+      </ipRange>
+      <ipRange>
+        <ip>
+          <int>192</int>
+          <int>168</int>
+          <int>0</int>
+          <int>100</int>
+        </ip>
+        <mask>
+          <int>255</int>
+          <int>255</int>
+          <int>255</int>
+          <int>255</int>
+        </mask>
+      </ipRange>
+    </ipRanges>
+  </accessControlConfiguration>
+  <externalProxyConfiguration>
+    <configurations>
+      <entry>
+        <string>socks</string>
+        <mutableExternalProxyConfiguration>
+          <active>false</active>
+          <requiresAuthentication>false</requiresAuthentication>
+          <port>0</port>
+        </mutableExternalProxyConfiguration>
+      </entry>
+      <entry>
+        <string>http</string>
+        <mutableExternalProxyConfiguration>
+          <active>false</active>
+          <requiresAuthentication>false</requiresAuthentication>
+          <port>0</port>
+        </mutableExternalProxyConfiguration>
+      </entry>
+      <entry>
+        <string>https</string>
+        <mutableExternalProxyConfiguration>
+          <active>false</active>
+          <requiresAuthentication>false</requiresAuthentication>
+          <port>0</port>
+        </mutableExternalProxyConfiguration>
+      </entry>
+    </configurations>
+    <enabled>false</enabled>
+    <alwaysBypassLocalhost>true</alwaysBypassLocalhost>
+  </externalProxyConfiguration>
+  <throttlingConfiguration>
+    <bandwidthDown>57.6</bandwidthDown>
+    <bandwidthUp>33.6</bandwidthUp>
+    <utilisationDown>70</utilisationDown>
+    <utilisationUp>70</utilisationUp>
+    <latency>250</latency>
+    <reliability>100</reliability>
+    <mtu>576</mtu>
+    <lowQuality>100</lowQuality>
+    <highQuality>100</highQuality>
+    <stability>100</stability>
+    <customPresets/>
+    <hosts class="listAdapter">
+      <list/>
+    </hosts>
+    <selectedHosts>false</selectedHosts>
+  </throttlingConfiguration>
+  <startupConfiguration>
+    <newSession>true</newSession>
+    <throttling>false</throttling>
+    <checkUpdates>true</checkUpdates>
+    <maximised>false</maximised>
+    <fullscreen>false</fullscreen>
+    <mainWindow>
+      <x>523</x>
+      <y>46</y>
+      <width>900</width>
+      <height>700</height>
+    </mainWindow>
+    <currentDirectory>D:\QA\Авторские курсы Вадима Ксендзова\Видео группы 18\Лекция 14 Charles2</currentDirectory>
+    <lastCheckUpdates>2021-07-11 19:48:29.241 UTC</lastCheckUpdates>
+  </startupConfiguration>
+  <userInterfaceConfiguration>
+    <promptToSaveSessions>false</promptToSaveSessions>
+    <promptToClearSession>false</promptToClearSession>
+    <showLineNumbers>true</showLineNumbers>
+    <lineWrap>true</lineWrap>
+    <autoScroll>true</autoScroll>
+    <combineHeadersAndBody>true</combineHeadersAndBody>
+    <combineRequestAndResponse>true</combineRequestAndResponse>
+    <minimiseToTray>false</minimiseToTray>
+    <showMemoryUsage>false</showMemoryUsage>
+    <enableHotkeys>true</enableHotkeys>
+    <alwaysOnTop>false</alwaysOnTop>
+    <showTrayIcon>true</showTrayIcon>
+    <highlightTreeChanges>true</highlightTreeChanges>
+    <sequenceFocused>false</sequenceFocused>
+    <sessionNavStructureLayout>0</sessionNavStructureLayout>
+    <sessionNavSequenceLayout>1</sessionNavSequenceLayout>
+    <unitsSpeed>0</unitsSpeed>
+    <unitsTime>0</unitsTime>
+    <warningsSeen/>
+    <properties>
+      <entry>
+        <string>SessionFrame.splitPlane.dividerLocation.horizontal</string>
+        <int>300</int>
+      </entry>
+      <entry>
+        <string>SummaryPanel.TABLE_COLUMN_STATES</string>
+        <columnStates>
+          <sizes>
+            <double>22.0</double>
+            <double>189.0</double>
+            <double>112.0</double>
+            <double>43.0</double>
+            <double>75.0</double>
+            <double>53.0</double>
+            <double>42.0</double>
+            <double>41.0</double>
+          </sizes>
+          <positions>
+            <int>0</int>
+            <int>1</int>
+            <int>2</int>
+            <int>3</int>
+            <int>4</int>
+            <int>5</int>
+            <int>6</int>
+            <int>7</int>
+          </positions>
+        </columnStates>
+      </entry>
+      <entry>
+        <string>ChartPanel.SIZE_TABLE_COLUMN_STATES</string>
+        <columnStates/>
+      </entry>
+      <entry>
+        <string>ExtensibleSessionSequenceTableModel.CUSTOM_COLUMNS</string>
+        <customColumns>
+          <columns/>
+        </customColumns>
+      </entry>
+      <entry>
+        <string>ChartPanel.TIMELINE_TABLE_COLUMN_STATES</string>
+        <columnStates>
+          <sizes>
+            <double>22.0</double>
+            <double>164.0</double>
+            <double>385.0</double>
+          </sizes>
+          <positions>
+            <int>0</int>
+            <int>1</int>
+            <int>2</int>
+          </positions>
+        </columnStates>
+      </entry>
+      <entry>
+        <string>ChartPanel.DURATION_TABLE_COLUMN_STATES</string>
+        <columnStates/>
+      </entry>
+      <entry>
+        <string>SessionFrame.splitPlane.dividerLocation.vertical</string>
+        <int>200</int>
+      </entry>
+      <entry>
+        <string>SessionFrame.navTabs.mode</string>
+        <string>Structure</string>
+      </entry>
+      <entry>
+        <string>URLEncodedQueryViewer.TABLE_COLUMN_STATES</string>
+        <columnStates/>
+      </entry>
+      <entry>
+        <string>NavigatorJTable.TABLE_COLUMN_STATES</string>
+        <columnStates/>
+      </entry>
+      <entry>
+        <string>URLEncodedQueryEditor.TABLE_COLUMN_STATES</string>
+        <columnStates/>
+      </entry>
+      <entry>
+        <string>ChartPanel.TYPE_TABLE_COLUMN_STATES</string>
+        <columnStates/>
+      </entry>
+    </properties>
+  </userInterfaceConfiguration>
   <toolConfiguration>
     <configs>
       <entry>
@@ -18,7 +280,7 @@
               <scheme>POST</scheme>
               <request>true</request>
               <response>true</response>
-              <enabled>false</enabled>
+              <enabled>true</enabled>
             </breakpoint>
             <breakpoint>
               <location>
@@ -30,7 +292,19 @@
               <scheme>POST</scheme>
               <request>true</request>
               <response>true</response>
-              <enabled>false</enabled>
+              <enabled>true</enabled>
+            </breakpoint>
+            <breakpoint>
+              <location>
+                <protocol>http</protocol>
+                <host>162.55.220.72</host>
+                <port>5005</port>
+                <path>/object_info_1</path>
+              </location>
+              <scheme>GET</scheme>
+              <request>true</request>
+              <response>true</response>
+              <enabled>true</enabled>
             </breakpoint>
             <breakpoint>
               <location>
@@ -44,20 +318,47 @@
               <response>true</response>
               <enabled>true</enabled>
             </breakpoint>
-            <breakpoint>
-              <location>
-                <protocol>http</protocol>
-                <host>162.55.220.72</host>
-                <port>5005</port>
-                <path>object_info_4</path>
-              </location>
-              <scheme>GET</scheme>
-              <request>true</request>
-              <response>true</response>
-              <enabled>false</enabled>
-            </breakpoint>
           </breakpoints>
         </breakpoints>
+      </entry>
+      <entry>
+        <string>Reverse Proxies</string>
+        <reverseProxies>
+          <active>false</active>
+          <reverseProxies/>
+        </reverseProxies>
+      </entry>
+      <entry>
+        <string>Block List</string>
+        <blacklist>
+          <locations>
+            <locationPatterns/>
+          </locations>
+          <toolEnabled>false</toolEnabled>
+          <useSelectedLocations>false</useSelectedLocations>
+          <action>0</action>
+        </blacklist>
+      </entry>
+      <entry>
+        <string>Map Remote</string>
+        <map>
+          <toolEnabled>false</toolEnabled>
+          <mappings/>
+        </map>
+      </entry>
+      <entry>
+        <string>Port Forwarding</string>
+        <portForwarding>
+          <active>false</active>
+          <portForwardings/>
+        </portForwarding>
+      </entry>
+      <entry>
+        <string>Viewer Mappings</string>
+        <viewerMappings>
+          <toolEnabled>false</toolEnabled>
+          <mappings/>
+        </viewerMappings>
       </entry>
       <entry>
         <string>Rewrite</string>
@@ -74,7 +375,7 @@
               <rules/>
             </rewriteSet>
             <rewriteSet>
-              <active>false</active>
+              <active>true</active>
               <name>get_method</name>
               <hosts>
                 <locationPatterns>
@@ -110,7 +411,7 @@
               </rules>
             </rewriteSet>
             <rewriteSet>
-              <active>false</active>
+              <active>true</active>
               <name>user_info_3</name>
               <hosts>
                 <locationPatterns>
@@ -144,7 +445,7 @@
               </rules>
             </rewriteSet>
             <rewriteSet>
-              <active>false</active>
+              <active>true</active>
               <name>object_info_3/500</name>
               <hosts>
                 <locationPatterns>
@@ -162,16 +463,18 @@
               <rules>
                 <rewriteRule>
                   <active>true</active>
-                  <ruleType>11</ruleType>
-                  <matchValue>200 OK</matchValue>
+                  <ruleType>9</ruleType>
+                  <matchHeader>salary</matchHeader>
+                  <matchValue>5000</matchValue>
                   <matchHeaderRegex>false</matchHeaderRegex>
                   <matchValueRegex>true</matchValueRegex>
                   <matchRequest>false</matchRequest>
                   <matchResponse>false</matchResponse>
-                  <newValue>500 unknown server error</newValue>
+                  <newHeader>slr</newHeader>
+                  <newValue>00,1</newValue>
                   <newHeaderRegex>false</newHeaderRegex>
                   <newValueRegex>false</newValueRegex>
-                  <matchWholeValue>false</matchWholeValue>
+                  <matchWholeValue>true</matchWholeValue>
                   <caseSensitive>false</caseSensitive>
                   <replaceType>1</replaceType>
                 </rewriteRule>
@@ -214,6 +517,142 @@
           </sets>
         </rewrite>
       </entry>
+      <entry>
+        <string>Map Local</string>
+        <mapLocal>
+          <toolEnabled>false</toolEnabled>
+          <mappings/>
+        </mapLocal>
+      </entry>
+      <entry>
+        <string>Allow List</string>
+        <whitelist>
+          <locations>
+            <locationPatterns/>
+          </locations>
+          <toolEnabled>false</toolEnabled>
+          <useSelectedLocations>false</useSelectedLocations>
+          <action>0</action>
+        </whitelist>
+      </entry>
+      <entry>
+        <string>Client Process</string>
+        <selectedHostsTool>
+          <locations>
+            <locationPatterns/>
+          </locations>
+          <toolEnabled>false</toolEnabled>
+          <useSelectedLocations>false</useSelectedLocations>
+        </selectedHostsTool>
+      </entry>
+      <entry>
+        <string>No Caching</string>
+        <selectedHostsTool>
+          <locations>
+            <locationPatterns/>
+          </locations>
+          <toolEnabled>false</toolEnabled>
+          <useSelectedLocations>false</useSelectedLocations>
+        </selectedHostsTool>
+      </entry>
+      <entry>
+        <string>DNS Spoofing</string>
+        <dnsSpoofing>
+          <toolEnabled>false</toolEnabled>
+          <spoofs/>
+        </dnsSpoofing>
+      </entry>
+      <entry>
+        <string>Mirror</string>
+        <mirror>
+          <locations>
+            <locationPatterns/>
+          </locations>
+          <toolEnabled>false</toolEnabled>
+          <useSelectedLocations>false</useSelectedLocations>
+        </mirror>
+      </entry>
+      <entry>
+        <string>Auto Save</string>
+        <autoSave>
+          <toolEnabled>false</toolEnabled>
+          <enableOnStartup>false</enableOnStartup>
+          <saveLowMem>false</saveLowMem>
+          <startOnMultiple>false</startOnMultiple>
+          <savePeriod>0</savePeriod>
+        </autoSave>
+      </entry>
+      <entry>
+        <string>Block Cookies</string>
+        <selectedHostsTool>
+          <locations>
+            <locationPatterns/>
+          </locations>
+          <toolEnabled>false</toolEnabled>
+          <useSelectedLocations>false</useSelectedLocations>
+        </selectedHostsTool>
+      </entry>
     </configs>
   </toolConfiguration>
+  <remoteControlConfiguration>
+    <enabled>false</enabled>
+    <allowAnonymous>false</allowAnonymous>
+    <users/>
+  </remoteControlConfiguration>
+  <clientSSLCertificatesConfiguration>
+    <certificates/>
+  </clientSSLCertificatesConfiguration>
+  <protobufConfiguration>
+    <hideUnvaluedFields>true</hideUnvaluedFields>
+    <cacheDescriptors>true</cacheDescriptors>
+    <heuristicTTL>300000</heuristicTTL>
+    <descriptors/>
+  </protobufConfiguration>
+  <gistConfiguration>
+    <publishLimit>10</publishLimit>
+    <secret>true</secret>
+    <openGist>true</openGist>
+    <enterpriseGitHub>false</enterpriseGitHub>
+  </gistConfiguration>
+  <focusConfiguration>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <protocol>https</protocol>
+            <host>safebrowsing.google.com</host>
+            <port>443</port>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+        <locationMatch>
+          <location>
+            <protocol>https</protocol>
+            <host>clients4.google.com</host>
+            <port>443</port>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+        <locationMatch>
+          <location>
+            <protocol>http</protocol>
+            <host>116.203.27.46</host>
+            <port>5002</port>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+        <locationMatch>
+          <location>
+            <protocol>http</protocol>
+            <host>162.55.220.72</host>
+            <port>5005</port>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+  </focusConfiguration>
+  <categoryConfiguration>
+    <categories/>
+  </categoryConfiguration>
 </charles-export>
